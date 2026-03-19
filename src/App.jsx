@@ -17,6 +17,13 @@ function App() {
         </div>
         <div>
           <h1>Hola chicos!</h1>
+          <h2>Cualquier cosa!!!!!</h2>
+          <h3>Cualquier otra cosa!!!</h3>
+          {import.meta.env.VITE_SECRET === 'development' && (
+            <p className="dev-only">
+              This text is only visible in development mode.
+            </p>
+          )}
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
